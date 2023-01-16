@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    background-image: url(siteweb/img/accueil.jpg);
+    background-size: 2000px;
+}
+
+
+form{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form h1{
+    font-size: 20px;
+}
+
+form .separation{
+    width: 100%;
+    height: 2px;
+    background-color: #5900ff;
+}
+
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+margin-top: 30px;
+padding: 10px 5px 10px 30px;
+border: 1px solid #c9c9c9;
+outline-color: #747cdf;
+border-radius: 5px;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    }
+    
+    button::after {
+    content : "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(225deg, #27d86c 0%, #26caf8  50%, #c625d0 100%);
+    }
+
+button {
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: rgb(105, 206, 79);
+    position: relative;
+    overflow: hidden;
+    padding: 20px 50px;
+    border-radius:5px ;
+    cursor: pointer;
+    font-size:1.5em;
+    box-shadow:0px -0px 0px 0px rgba(143,64,248,.5), 0px 0px 0px 0px rgba(39,200,255, .5);
+    transition: all .2s
+    
+  }
+  
+  button::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(225deg, rgb(45, 255, 3) 0%, rgb(45, 225, 3) 50%,
+    white 45, 255, 3);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .20s;
+  }
+   
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  button:hover {
+    transform:translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+  }

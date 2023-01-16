@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-style:oblique;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: -8px 7px 0 rgba(255, 255, 255, 0.034);
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+   
+}
+
+h2 {
+    font-style: oblique;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+}
+
+h3 {
+    font-style: oblique;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+}
+
+h4 {
+    font-style: oblique;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+}
+
+
+ 
+p {
+    font-style: oblique;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+
+  
+}
+
+a {
+    font-style: oblique;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+img {
+    border-image-width: 2.5rem;
+}
+
+button {
+border: 0;
+background: transparent;
+color: black;
+}
+
+button::after {
+content : "";
+width: 400px;
+height: 400px;
+background: linear-gradient(225deg, #27d86c 0%, #26caf8  50%, #c625d0 100%);
+}
+
+button {
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: rgb(105, 206, 79);
+    position: relative;
+    overflow: hidden;
+    padding: 20px 50px;
+    border-radius:5px ;
+    cursor: pointer;
+    font-size:1.5em;
+    box-shadow:0px -0px 0px 0px rgba(143,64,248,.5), 0px 0px 0px 0px rgba(39,200,255, .5);
+    transition: all .2s
+  }
+  
+  button::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(225deg, rgb(45, 255, 3) 0%, rgb(45, 225, 3) 50%,
+    white 45, 255, 3);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .20s;
+  }
+   
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  button:hover {
+    transform:translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+  }
+
+  .image {
+    border: black;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+  }
+   img {
+    width: 400px;
+   }
